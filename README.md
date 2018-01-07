@@ -14,7 +14,7 @@ Examples: [/danrosetutorial](https://github.com/pme123/scala-type-classes/tree/m
 
 ## A Pragmatic Introduction to Category Theory
 This [introduction](https://www.youtube.com/watch?v=Ss149MsZluI) uses Type classes a lot - so I adapted the examples
-from here [Daniela Sfregola](https://github.com/DanielaSfregola/tutorial-cat).
+from here: [Daniela Sfregola](https://github.com/DanielaSfregola/tutorial-cat).
 
 Examples: [/category](https://github.com/pme123/scala-type-classes/tree/master/src/main/scala/category)
 
