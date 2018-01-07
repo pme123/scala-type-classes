@@ -1,6 +1,8 @@
-import cats.{Applicative, Foldable}
-import cats.instances.option._
+package selector
+
+import cats.Foldable
 import cats.instances.list._
+import cats.instances.option._
 
 import scala.language.higherKinds
 
