@@ -72,9 +72,9 @@ object GenericSelector extends App {
     extends Named[Currency]
       with Identified[Currency] {
 
-    override def name(c: Currency) = c.name
+    override def name(c: Currency): String = c.name
 
-    override def uid(c: Currency) = c.uid
+    override def uid(c: Currency): String = c.uid
 
 
     val all = List(CHF, DOLLAR, EURO)

@@ -2,6 +2,8 @@ package category
 
 import category.entity._
 
+import scala.language.higherKinds
+
 trait Applicative[Box[_]] extends Functor[Box] {
 
   def pure[A](a: A): Box[A]

@@ -9,18 +9,18 @@ object InterfaceObjectDirectAccess extends App {
 
   // type class instance for Int
   implicit object intReversible extends Reversible[Int] {
-    override def reverse(data: Int) = data.toString.reverse.toInt
+    override def reverse(data: Int): Int = data.toString.reverse.toInt
   }
 
   // type class instance for String
   implicit object stringReversible extends Reversible[String] {
-    override def reverse(data: String) = data.reverse
+    override def reverse(data: String): String = data.reverse
   }
 
   // basic object interface
   object reverser {
 
-    def apply[T](implicit reversible: Reversible[T]) = reversible
+    def apply[T](implicit reversible: Reversible[T]): Reversible[T] = reversible
 
   }
 

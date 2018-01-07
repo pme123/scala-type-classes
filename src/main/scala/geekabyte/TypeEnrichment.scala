@@ -9,16 +9,16 @@ object TypeEnrichment extends App {
 
   // type class instance for Int
   implicit object intReversible extends Reversible[Int] {
-    override def reverse(data: Int) = data.toString.reverse.toInt
+    override def reverse(data: Int): Int = data.toString.reverse.toInt
   }
 
   // type class instance for String
   implicit object stringReversible extends Reversible[String] {
-    override def reverse(data: String) = data.reverse
+    override def reverse(data: String): String = data.reverse
   }
 
   implicit class FlipOps[T](value: T) {
-    def flip(implicit reversible: Reversible[T]) = {
+    def flip(implicit reversible: Reversible[T]): T = {
       reversible.reverse(value)
     }
   }
